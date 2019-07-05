@@ -1,0 +1,23 @@
+@import "./variables";
+@import "./icons";
+
+.overView {
+  .over_view_in {
+    padding: 20px 0;
+    
+    h3.title {
+      font-size: 16px;
+      color: $light-grey2;
+      line-height: 19px;
+      font-weight: 100;
+      margin-bottom: 0;
+    }
+    .subtitle {
+      font-size: 16px;
+      line-height: 19px;
+      color: $dark-grey;
+      margin-bottom: 0;
+      font-weight: normal;
+    }
+  }
+}

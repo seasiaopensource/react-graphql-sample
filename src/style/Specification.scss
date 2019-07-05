@@ -1,0 +1,29 @@
+@import "./variables";
+@import "./mixin";
+
+.overView {
+  .mb-width {
+    .title {
+      padding: 0 5px;
+      font-size: 24px;
+      margin: 0;
+      text-transform: uppercase;
+      color: $dark-grey;
+      span {
+        font-size: 13px;
+        position: absolute;
+        top: -3px;
+        color: $dark-grey;
+      }
+      sub {
+        bottom: 0 !important;
+        font-size: 62% !important;
+        font-size: 14px;
+        text-transform: initial !important;
+      }
+    }
+    @include xs {
+      min-width: 50%;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "./variables";
+@import "./mixin";
+
+.overView {
+  .home-slider {
+    position: relative;
+    .home-slider-photos-caption {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background: rgba(51, 51, 51, 0.7);
+      font-size: 14px;
+      line-height: 31px;
+      color: $white;
+      text-transform: uppercase;
+    }
+    .carousel {
+      .carousel-control-next {
+        width: 8%;
+      }
+      .carousel-control-prev {
+        width: 8%;
+      }
+      .carousel-control-next-icon {
+        background-image: url("../images/errow-2.svg");
+        height: 50px;
+      }
+      .carousel-control-prev-icon {
+        background-image: url("../images/errow-1.svg");
+        height: 50px;
+      }
+      .carousel-inner {
+        .carousel-item img {
+          @include md {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
